@@ -4,7 +4,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 
 //token: fgem62UlR3-kK4gVSd6dMz:APA91bFYIuL7x8-HhCnuIefirSh4vF4MOQDpfiFKzb53-zkFa5pvz06zsxcJslWVgOeLk_RDYLrW0Hrt7kTglVYldk1SHLQ_LSprBf-FK6VnsHAcXoSSSMP8nt4wIez45FDhqH11iYM7
-class PushNotificationService {
+class PushNotificationProvider {
   static FirebaseMessaging messaging = FirebaseMessaging.instance;
   static String? token;
   static StreamController<String> _messageStream =
